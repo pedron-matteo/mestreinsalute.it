@@ -1,0 +1,115 @@
+/* Infermeria Page */
+
+.nurse-header {
+    background: var(--bg-header);
+}
+
+.nurse-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 1.4rem;
+    margin-bottom: 4rem;
+}
+
+.services-list h2 {
+    margin-bottom: 1rem;
+}
+
+.service-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    padding: 1rem;
+    margin-bottom: 0.9rem;
+    box-shadow: var(--card-shadow);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.service-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--hover-shadow);
+}
+
+.icon-box {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(11, 77, 121, 0.1);
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.service-content h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.3rem;
+    font-size: 1.06rem;
+}
+
+.service-content p {
+    color: var(--text-light);
+    font-size: 0.96rem;
+}
+
+.info-card {
+    background: var(--surface);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.info-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.04rem;
+}
+
+.info-card ul li {
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.62rem 0;
+    color: var(--text-light);
+    font-size: 0.93rem;
+}
+
+.info-card ul li:last-child {
+    border-bottom: 0;
+}
+
+.note {
+    margin-top: 0.85rem;
+    border-radius: 10px;
+    background: #fff6de;
+    color: #7a4a00;
+    padding: 0.7rem;
+    font-size: 0.86rem;
+}
+
+.contact-card {
+    text-align: center;
+}
+
+.phone-link {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0.55rem;
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 900px) {
+    .nurse-layout {
+        grid-template-columns: 1fr;
+    }
+}

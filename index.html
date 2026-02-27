@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mestre in Salute</title>
+    <meta name="description"
+        content="Sito ufficiale della Medicina di Gruppo Mestre in Salute. Prenota appuntamenti, consulta orari medici e servizi infermieristici.">
+
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 data-i18n="home.hero_title">Mestre in Salute</h1>
+            <p data-i18n="home.hero_desc">Medicina di gruppo integrata</p>
+            <div class="hero-buttons">
+                <a href="prenota.html" class="cta-btn primary" data-i18n="home.btn_book">Prenota Visita</a>
+                <a href="medici.html" class="cta-btn secondary" data-i18n="home.btn_doctors">I Nostri Medici</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Intro / Chi Siamo -->
+        <section class="intro" id="chi-siamo">
+            <div class="section-title">
+                <h2 data-i18n="home.intro_title">Benvenuti a Mestre in Salute</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="intro-grid">
+                <div class="intro-text">
+                    <p data-i18n="home.intro_p1">Siamo un'associazione di 10 Medici di Medicina Generale che operano in
+                        forma associata per
+                        garantire una migliore assistenza ai propri assistiti.</p>
+                    <p data-i18n="home.intro_p2">La nostra struttura permette una maggiore reperibilità, condivisione
+                        delle informazioni cliniche nel rispetto della <a href="privacy.html">privacy</a> e un servizio di infermeria integrato.</p>
+                    <ul class="features-list">
+                        <li data-i18n="home.feat_doctors"><i class="fas fa-user-md"></i> 10 Medici di Base</li>
+                        <li data-i18n="home.feat_records"><i class="fas fa-notes-medical"></i> Cartella Clinica
+                            Condivisa</li>
+                        <li data-i18n="home.feat_nursing"><i class="fas fa-syringe"></i> Infermeria Attiva</li>
+                        <li data-i18n="home.feat_booking"><i class="fas fa-calendar-check"></i> Prenotazioni Online</li>
+                    </ul>
+                </div>
+                <div class="intro-image">
+                    <div class="img-placeholder">
+                        <video id="homeIntroVideo" class="intro-video" src="assets/video/MDGI.mp4" controls muted loop playsinline
+                            webkit-playsinline preload="metadata" disablepictureinpicture controlslist="nofullscreen noremoteplayback"></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mgi-extended-info">
+            <div class="section-title">
+                <h2 data-i18n="home.mgi_title">Organizzazione e Accesso ai Servizi MGI</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="mgi-extended-content">
+                <p data-i18n="home.mgi_p1">Nella sede della Medicina di Gruppo Integrata (MGI) è presente almeno un Medico per le 12 ore diurne (H12) dal lunedi al venerdi ore 8.00-20.00 (il sabato dalle 8.00 alle 10.00, anche se prefestivo), per dare risposta alle prestazioni ambulatoriali non differibili. Ogni paziente dovrà rivolgersi al proprio medico; tuttavia, in sua assenza, o in caso di necessità non differibile, potrà essere visitato da un medico del gruppo.</p>
+                <p data-i18n="home.mgi_p2">Si ricorda che nelle giornate prefestive lo studio è aperto dalle 8:00 alle 12:00 (il sabato comunque dalle 8.00 alle 10.00). Le visite presso i medici sono possibili solamente previo appuntamento da concordare con il Servizio di Segreteria.</p>
+                <p data-i18n="home.mgi_p3">In caso di necessità non differibile, come per malattie in fase acuta che richiedano una rapida diagnosi e terapia, o dimissioni ospedaliere, è necessario presentarsi o contattare il Servizio di Segreteria per una visita tempestiva in ambulatorio (ulteriori dettagli nella Guida ai Servizi).</p>
+                <p data-i18n="home.mgi_p4">In questo caso il medico (il proprio o il reperibile), verificata l’effettiva necessità, si rende disponibile quanto prima, compatibilmente con la situazione clinica del paziente e con quella organizzativa della struttura.</p>
+                <p data-i18n="home.mgi_p5">Possono usufruire dei Servizi della MGI tutti gli assistiti dei medici che hanno aderito a questa forma associativa delle Cure Primarie.</p>
+            </div>
+        </section>
+
+        <!-- Highlights Services -->
+        <section class="services-highlight">
+            <div class="card">
+                <i class="fas fa-stethoscope"></i>
+                <h3 data-i18n="home.card_gp_title">Medicina Generale</h3>
+                <p data-i18n="home.card_gp_desc">Visite ambulatoriali, domiciliari e gestione delle patologie croniche.
+                </p>
+                <a href="medici.html" class="card-link"><span data-i18n="home.card_link_doctors">I nostri medici</span>
+                    <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="card">
+                <i class="fas fa-user-nurse"></i>
+                <h3 data-i18n="home.card_nurse_title">Infermeria</h3>
+                <p data-i18n="home.card_nurse_desc">Medicazioni, vaccinazioni, terapie iniettive e monitoraggio
+                    parametri.</p>
+                <a href="infermeria.html" class="card-link"><span data-i18n="home.card_link_services">Scopri i
+                        servizi</span> <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="card">
+                <i class="fas fa-file-prescription"></i>
+                <h3 data-i18n="home.card_rx_title">Ricette e Impegnative</h3>
+                <p data-i18n="home.card_rx_desc">Richiesta farmaci continuativi e controllo piani terapeutici.</p>
+                <a href="prenota.html" class="card-link"><span data-i18n="home.card_link_info">Come richiedere</span> <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="card card-wide">
+                <i class="fas fa-phone"></i>
+                <h3 data-i18n="home.card_phone_title">Continuità assistenziale</h3>
+                <p data-i18n="home.card_phone_desc">Di notte, dalle ore 20.00 alle ore 8.00 e dalle ore 10.00 del sabato e dei giorni prefestivi, è in funzione il servizio di Continuità Assistenziale (telefono: 041-2385600).
+                    Il ricorso al Pronto Soccorso è consigliato solo nei casi di reale urgenza o su indicazione del medico che vi invierà unitamente ad una richiesta motivata.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

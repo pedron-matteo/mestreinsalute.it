@@ -1,0 +1,76 @@
+.privacy-header {
+    background: var(--bg-header);
+}
+
+.privacy-layout {
+    margin-bottom: 4rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.privacy-card {
+    background: var(--surface);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+    padding: 1.3rem;
+}
+
+.privacy-card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.7rem;
+}
+
+.privacy-card h2 i {
+    color: var(--primary-color);
+    margin-right: 0.4rem;
+}
+
+.privacy-card p {
+    color: var(--text-light);
+    margin-bottom: 0.75rem;
+}
+
+.privacy-card a {
+    color: var(--secondary-color);
+    font-weight: 700;
+    word-break: break-word;
+}
+
+.privacy-card ul {
+    margin: 0.7rem 0 0.9rem;
+    padding-left: 1.2rem;
+    list-style: disc;
+}
+
+.privacy-card li {
+    color: var(--text-light);
+    margin-bottom: 0.45rem;
+    line-height: 1.55;
+}
+
+.privacy-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+.privacy-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.72rem 1rem;
+    border-radius: 999px;
+    border: 1px solid rgba(11, 77, 121, 0.35);
+    background: #fff;
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed), background-color var(--transition-speed);
+}
+
+.privacy-btn:hover {
+    transform: translateY(-1px);
+    background: rgba(11, 77, 121, 0.08);
+    box-shadow: var(--shadow-sm);
+}

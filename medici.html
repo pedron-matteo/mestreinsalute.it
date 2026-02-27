@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medici</title>
+    <meta name="description"
+        content="Il team di medici di medicina generale di Mestre in Salute. Scopri gli orari e le modalità di contatto.">
+
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/medici.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1 data-i18n="doctors.header_title">Medici</h1>
+        <p data-i18n="doctors.header_desc">10 Medici di Medicina Generale al servizio della tua salute.</p>
+    </section>
+
+    <!-- Doctors Grid -->
+    <main>
+        <div class="doctors-grid">
+            <!-- Doctor 1 -->
+            <div class="doctor-card" data-doctor="1">
+                <div class="doctor-img">
+                    <img src="assets/images/doctors/laura-bergo.jpg" alt="Laura Bergo" loading="lazy"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    <i class="fas fa-user-doctor doctor-fallback" aria-hidden="true"></i>
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr.ssa Laura Bergo</h3>
+                    <p class="specialty" data-i18n="doctors.specialty">Medicina Generale</p>
+                    <button class="view-schedule-btn" onclick="openModal(1)" data-i18n="doctors.btn_schedule">Orari e
+                        Contatti</button>
+                </div>
+            </div>
+
+            <!-- Doctor 2 -->
+            <div class="doctor-card" data-doctor="2">
+                <div class="doctor-img">
+                    <img src="assets/images/doctors/dr-silvia-gaburro.svg" alt="Silvia Gaburro" loading="lazy"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    <i class="fas fa-user-doctor doctor-fallback" aria-hidden="true"></i>
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr.ssa Silvia Gaburro</h3>
+                    <p class="specialty" data-i18n="doctors.specialty">Medicina Generale</p>
+                    <button class="view-schedule-btn" onclick="openModal(2)" data-i18n="doctors.btn_schedule">Orari e
+                        Contatti</button>
+                </div>
+            </div>
+
+            <!-- Doctor 3 -->
+            <div class="doctor-card" data-doctor="3">
+                <div class="doctor-img">
+                    <img src="assets/images/doctors/dr-luca-verdi.svg" alt="Christian Cirone" loading="lazy"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    <i class="fas fa-user-doctor doctor-fallback" aria-hidden="true"></i>
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr. Christian Cirone</h3>
+                    <p class="specialty" data-i18n="doctors.specialty">Medicina Generale</p>
+                    <button class="view-schedule-btn" onclick="openModal(3)" data-i18n="doctors.btn_schedule">Orari e
+                        Contatti</button>
+                </div>
+            </div>
+
+            <!-- Doctor 4 -->
+            <div class="doctor-card" data-doctor="4">
+                <div class="doctor-img">
+                    <img src="assets/images/doctors/dr-giulia-neri.svg" alt="Amany Mohammed" loading="lazy"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    <i class="fas fa-user-doctor doctor-fallback" aria-hidden="true"></i>
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr.ssa Amany Mohammed</h3>
+                    <p class="specialty" data-i18n="doctors.specialty">Medicina Generale</p>
+                    <button class="view-schedule-btn" onclick="openModal(4)" data-i18n="doctors.btn_schedule">Orari e
+                        Contatti</button>
+                </div>
+            </div>
+
+            <!-- Doctor 5 -->
+            <div class="doctor-card" data-doctor="5">
+                <div class="doctor-img">
+                    <img src="assets/images/doctors/gilberto-dariol.jpg" alt="Gilberto Dariol" loading="lazy"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    <i class="fas fa-user-doctor doctor-fallback" aria-hidden="true"></i>
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr. Gilberto Dariol</h3>
+                    <p class="specialty" data-i18n="doctors.specialty">Medicina Generale</p>
+                    <button class="view-schedule-btn" onclick="openModal(5)" data-i18n="doctors.btn_schedule">Orari e
+                        Contatti</button>
+                </div>
+            </div>
+
+            <!-- Doctor 6 -->
+            <div class="doctor-card" data-doctor="6">
+                <div class="doctor-img">
+                    <img src="assets/images/doctors/ongaro-andrea.jpg" alt="Andrea Ongaro" loading="lazy"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    <i class="fas fa-user-doctor doctor-fallback" aria-hidden="true"></i>
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr. Andrea Ongaro</h3>
+                    <p class="specialty" data-i18n="doctors.specialty">Medicina Generale</p>
+                    <button class="view-schedule-btn" onclick="openModal(6)" data-i18n="doctors.btn_schedule">Orari e
+                        Contatti</button>
+                </div>
+            </div>
+
+            <!-- Doctor 7 -->
+            <div class="doctor-card" data-doctor="7">
+                <div class="doctor-img">
+                    <img src="assets/images/doctors/giulia-perissinotto.jpg" alt="Giulia Perissinotto" loading="lazy"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    <i class="fas fa-user-doctor doctor-fallback" aria-hidden="true"></i>
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr.ssa Giulia Perissinotto</h3>
+                    <p class="specialty" data-i18n="doctors.specialty">Medicina Generale</p>
+                    <button class="view-schedule-btn" onclick="openModal(7)" data-i18n="doctors.btn_schedule">Orari e
+                        Contatti</button>
+                </div>
+            </div>
+
+            <!-- Doctor 8 -->
+            <div class="doctor-card" data-doctor="8">
+                <div class="doctor-img">
+                    <img src="assets/images/doctors/sara-congiu.jpg" alt="Sara Congiu" loading="lazy"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    <i class="fas fa-user-doctor doctor-fallback" aria-hidden="true"></i>
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr.ssa Sara Congiu</h3>
+                    <p class="specialty" data-i18n="doctors.specialty">Medicina Generale</p>
+                    <button class="view-schedule-btn" onclick="openModal(8)" data-i18n="doctors.btn_schedule">Orari e
+                        Contatti</button>
+                </div>
+            </div>
+
+            <!-- Doctor 9 -->
+            <div class="doctor-card" data-doctor="9">
+                <div class="doctor-img">
+                    <img src="assets/images/doctors/dr-andrea-ferrari.svg" alt="Susanna Favarato" loading="lazy"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    <i class="fas fa-user-doctor doctor-fallback" aria-hidden="true"></i>
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr.ssa Susanna Favarato</h3>
+                    <p class="specialty" data-i18n="doctors.specialty">Medicina Generale</p>
+                    <button class="view-schedule-btn" onclick="openModal(9)" data-i18n="doctors.btn_schedule">Orari e
+                        Contatti</button>
+                </div>
+            </div>
+
+            <!-- Doctor 10 -->
+            <div class="doctor-card" data-doctor="10">
+                <div class="doctor-img">
+                    <img src="assets/images/doctors/dr-sara-gallo.svg" alt="Jacopo Scaggiante" loading="lazy"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    <i class="fas fa-user-doctor doctor-fallback" aria-hidden="true"></i>
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr. Jacopo Scaggiante</h3>
+                    <p class="specialty" data-i18n="doctors.specialty">Medicina Generale</p>
+                    <button class="view-schedule-btn" onclick="openModal(10)" data-i18n="doctors.btn_schedule">Orari e
+                        Contatti</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Generic Modal Container -->
+    <div id="doctorModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalBody">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/medici.js"></script>
+</body>
+
+</html>

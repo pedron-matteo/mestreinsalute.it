@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info & Contatti</title>
+    <meta name="description"
+        content="Informazioni utili, contatti, orari e posizione della medicina di gruppo Mestre in Salute.">
+
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/info.css">
+</head>
+
+<body>
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <section class="page-header info-header">
+        <h1 data-i18n="info.header_title">Contatti e Informazioni</h1>
+        <p data-i18n="info.header_desc">Siamo qui per aiutarti. Trova tutte le informazioni necessarie.</p>
+    </section>
+
+    <main class="info-layout">
+
+        <!-- Contact Grid -->
+        <section class="contact-grid">
+            <!-- Left Column: Map & Info -->
+            <div class="contact-details">
+                <div class="info-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3 data-i18n="info.where">Dove Siamo</h3>
+                    <p data-i18n="footer.address">Via Cappuccina 129<br>30172 Mestre (VE)</p>
+                    <div class="map-container">
+                        <!-- Google Maps Embed Placeholder -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.467406324263!2d12.234661315556208!3d45.49023497910118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb43067d544d9%3A0x6e804f58690853a2!2sVia%20Cappuccina%2C%2030172%20Venezia%20VE!5e0!3m2!1sit!2sit!4v1620000000000!5m2!1sit!2sit"
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <i class="fas fa-phone-volume"></i>
+                    <h3 data-i18n="info.phones">Contatti Telefonici</h3>
+                    <p><strong data-i18n="info.phone_secretariat">Segreteria:</strong> <a href="tel:0410986057">041 0986057</a></p>
+                    <p><strong data-i18n="info.phone_secretariat_inps">Segreteria INPS:</strong> <a href="tel:0410970169">041 0970169</a></p>
+                    <p><strong data-i18n="info.website">Sito:</strong> <a href="https://www.mestreinsalute.it/" target="_blank"
+                            rel="noopener noreferrer">www.mestreinsalute.it</a></p>
+                </div>
+            </div>
+
+            <!-- Right Column: Form -->
+            <div class="contact-form-container">
+                <h2 data-i18n="info.form_title">Scrivici un Messaggio</h2>
+                <form id="contactForm">
+                    <input type="hidden" name="to_email" value="segnalazioni@mestreinsalute.it">
+                    <div class="form-group">
+                        <label for="name" data-i18n="info.form_name">Nome e Cognome</label>
+                        <input type="text" id="name" name="from_name" required placeholder=""
+                            data-i18n-ph="info.form_name_ph">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" data-i18n="info.form_email">Email</label>
+                        <input type="email" id="email" name="from_email" required placeholder=""
+                            data-i18n-ph="info.form_email_ph">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" data-i18n="info.form_subject">Oggetto</label>
+                        <select id="subject" name="subject">
+                            <option value="info" data-i18n="info.form_subj_info">Richiesta Informazioni</option>
+                            <option value="appointment" data-i18n="info.form_subj_app">Problemi Prenotazione</option>
+                            <option value="other" data-i18n="info.form_subj_other">Altro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" data-i18n="info.form_message">Messaggio</label>
+                        <textarea id="message" name="message" rows="5" required placeholder=""
+                            data-i18n-ph="info.form_message_ph"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn" data-i18n="info.form_btn_send">Invia Messaggio</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="assets/js/info.js"></script>
+</body>
+
+</html>

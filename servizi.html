@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servizi</title>
+    <meta name="description"
+        content="Guida completa ai servizi di Mestre in Salute: vaccinazioni, visite, prescrizioni, referti e impegnative.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/servizi.css">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="page-header servizi-header">
+        <h1 data-i18n="services.header_title">Servizi</h1>
+        <p data-i18n="services.header_desc">Informazioni pratiche per prenotazioni, richieste e assistenza.</p>
+    </section>
+
+    <main class="servizi-layout">
+        <section class="servizi-intro card-surface">
+            <h2><i class="fas fa-circle-info"></i> <span data-i18n="services.quick_title">Canali rapidi</span></h2>
+            <div class="quick-grid">
+                <p><strong data-i18n="services.quick_secretariat_label">Segreteria:</strong> <a
+                        href="tel:0410986057">041 0986057</a></p>
+                <p><strong data-i18n="services.quick_inps_label">Certificati INPS:</strong> <a href="tel:0410970169">041
+                        0970169</a></p>
+                <p><strong data-i18n="services.quick_ulss_label">Portale vaccini ULSS:</strong> <a
+                        href="https://serenissima.myprenota.it/mdgi-vaccini" target="_blank"
+                        rel="noopener noreferrer">serenissima.myprenota.it/mdgi-vaccini</a></p>
+            </div>
+            <div class="services-search">
+                <label for="servicesSearch" data-i18n="services.search_label">Cerca nei servizi</label>
+                <input type="search" id="servicesSearch" placeholder="Es. vaccino, domiciliare..."
+                    data-i18n-ph="services.search_ph">
+                <p id="servicesSearchInfo" data-i18n="services.search_info_idle">Digita una o più parole chiave per
+                    filtrare ed evidenziare i risultati.</p>
+            </div>
+        </section>
+
+        <section class="accordion service-accordion">
+            <article class="accordion-item">
+                <button class="accordion-header">
+                    <span data-i18n="services.vax_title">Effettuare la vaccinazione antinfluenzale e anticovid</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <p data-i18n="services.vax_p1">Il vaccino antinfluenzale va prenotato sul portale ULSS:</p>
+                        <p><a href="https://serenissima.myprenota.it/mdgi-vaccini" target="_blank"
+                                rel="noopener noreferrer">https://serenissima.myprenota.it/mdgi-vaccini</a></p>
+                        <ul>
+                            <li data-i18n="services.vax_l1">Nel mese di dicembre la prenotazione per l'orario pomeridiano è possibile solo presso infermeria.</li>
+                            <li data-i18n="services.vax_l2">Nel mese di gennaio le vaccinazioni verranno effettuate solo lunedì, mercoledì e giovedì dalle 9:00 alle 12:00.</li>
+                            <li data-i18n="services.vax_l3">Il vaccino anticovid (ad almeno 3 mesi dal precedente o da precedente infezione) è effettuabile solo nella stessa prenotazione di quello antinfluenzale.</li>
+                        </ul>
+                        <p class="note" data-i18n="services.vax_note">Vedi le indicazioni del Ministero della Salute e della Regione Veneto sulla campagna vaccinale.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="accordion-item">
+                <button class="accordion-header">
+                    <span data-i18n="services.home_title">Richiedere una visita domiciliare</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <p data-i18n="services.home_p1">La richiesta deve essere necessariamente telefonica al proprio medico o al numero 0410986057.</p>
+                        <ul>
+                            <li data-i18n="services.home_l1">Le visite domiciliari sono eseguite di norma nella stessa giornata se la richiesta perviene entro le ore 10:00.</li>
+                            <li data-i18n="services.home_l2">Le richieste dopo le 10:00 vengono eseguite entro le 12:00 del giorno successivo.</li>
+                            <li data-i18n="services.home_l3">Di sabato e nei prefestivi sono eseguite esclusivamente le visite richieste entro le 10:00.</li>
+                        </ul>
+                        <p data-i18n="services.home_p2">La visita domiciliare viene valutata nella sua appropriatezza dal proprio medico ed è riservata ai pazienti che, per malattia o età, non sono in grado di recarsi autonomamente o accompagnati in studio.</p>
+                        <p data-i18n="services.home_p3">Non rientrano in queste situazioni le più comuni malattie febbrili.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="accordion-item">
+                <button class="accordion-header">
+                    <span data-i18n="services.inps_title">Richiedere una visita a scopo di certificato di malattia INPS</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <p data-i18n="services.inps_p1">La richiesta deve essere necessariamente telefonica al numero dedicato 0410970169.</p>
+                        <p data-i18n="services.inps_p2">Servizio attivo dal lunedì al venerdì negli orari 8:00 - 10:00 e 13:00 - 15:00.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="accordion-item">
+                <button class="accordion-header">
+                    <span data-i18n="services.book_title">Prenotare una visita medica</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <p data-i18n="services.book_p1">La visita medica in studio e le prestazioni concordate con il medico possono essere prenotate telefonando alla segreteria al numero 0410986057.</p>
+                        <ul>
+                            <li data-i18n="services.book_l1">Dal lunedì al venerdì: 8:00 - 20:00.</li>
+                            <li data-i18n="services.book_l2">Giorni prefestivi: 8:00 - 12:00.</li>
+                            <li data-i18n="services.book_l3">Sabato: 8:00 - 10:00.</li>
+                        </ul>
+                        <p data-i18n="services.book_p2">È consigliato chiamare nelle ore di minor affollamento, in particolare dopo le 11:00.</p>
+                        <p data-i18n="services.book_p3">In caso di necessità non differibile (malattie acute con necessità di rapida diagnosi/terapia o dimissioni ospedaliere), contattare la segreteria per una visita tempestiva: il medico, verificata la necessità, si rende disponibile quanto prima in base al quadro clinico e all'organizzazione della struttura.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="accordion-item">
+                <button class="accordion-header">
+                    <span data-i18n="services.repeat_title">Richiedere ricette per farmaci continuativi</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <p data-i18n="services.repeat_p1">Per farmaci già prescritti in precedenza, è possibile effettuare la richiesta con queste modalità:</p>
+                        <ul>
+                            <li data-i18n="services.repeat_l1">Tramite App SANITÀ KM ZERO, dopo il consenso al Fascicolo Sanitario Elettronico; dove richiesto impostare l'indirizzo prescrizioni@mestreinsalute.it (usato solo dall'app).</li>
+                            <li data-i18n="services.repeat_l2">Compilando il modulo online nella pagina PRESCRIZIONI.</li>
+                            <li data-i18n="services.repeat_l3">Inviando fax al numero 0410986058 con dati paziente, nome medico e farmaci richiesti.</li>
+                            <li data-i18n="services.repeat_l4">Telefonando alla segreteria al numero 0410986057 (consigliato dopo le 11:00).</li>
+                        </ul>
+                        <p data-i18n="services.repeat_p2">Il Servizio di Segreteria consegna le ricette firmate il terzo giorno lavorativo successivo alla richiesta.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="accordion-item">
+                <button class="accordion-header">
+                    <span data-i18n="services.newdrug_title">Richiedere nuovi farmaci da referti specialistici</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <p data-i18n="services.newdrug_p1">Per farmaci mai prescritti in precedenza o non continuativi (con referto specialistico da allegare), è possibile:</p>
+                        <ul>
+                            <li data-i18n="services.newdrug_l1">Compilare il modulo online nella pagina RICHIESTA NUOVI FARMACI.</li>
+                            <li data-i18n="services.newdrug_l2">Inviare fax al numero 0410986058 con dati paziente, nome medico, farmaci richiesti e referto specialistico.</li>
+                            <li data-i18n="services.newdrug_l3">Telefonare alla segreteria al numero 0410986057.</li>
+                        </ul>
+                        <p data-i18n="services.newdrug_p2">La richiesta viene presa in carico dal medico entro il quinto giorno lavorativo successivo.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="accordion-item">
+                <button class="accordion-header">
+                    <span data-i18n="services.reports_title">Inviare documenti o referti al medico</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <p data-i18n="services.reports_p1">Per inviare risultati di visite ed esami (laboratorio, strumentali o specialistiche), è possibile:</p>
+                        <ul>
+                            <li data-i18n="services.reports_l1">Utilizzare il modulo nella pagina REFERTI.</li>
+                            <li data-i18n="services.reports_l2">Inviare fax al numero 0410986058 con dati paziente, nome medico e referto.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="accordion-item">
+                <button class="accordion-header">
+                    <span data-i18n="services.referral_title">Richiedere impegnative per visite specialistiche</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <p data-i18n="services.referral_p1">Per la prima visita specialistica è necessaria una visita medica previo appuntamento.</p>
+                        <p data-i18n="services.referral_p2">Per impegnative successive a visite già effettuate, inviare lettera o referti dello specialista tramite:</p>
+                        <ul>
+                            <li data-i18n="services.referral_l1">Modulo nella pagina REFERTI, aggiungendo una nota scritta al referto inviato.</li>
+                            <li data-i18n="services.referral_l2">Fax al numero 0410986058.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="accordion-item">
+                <button class="accordion-header">
+                    <span data-i18n="services.other_title">Sottoporre al medico altre problematiche</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <p data-i18n="services.other_p1">Per problematiche diverse da quelle sopra descritte è possibile:</p>
+                        <ul>
+                            <li data-i18n="services.other_l1">Contattare direttamente il proprio medico.</li>
+                            <li data-i18n="services.other_l2">Inviare fax al numero 0410986058.</li>
+                            <li data-i18n="services.other_l3">Telefonare alla segreteria al numero 0410986057 (consigliato dopo le 11:00).</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="accordion-item">
+                <button class="accordion-header">
+                    <span data-i18n="services.ulss_title">Avere informazioni sui servizi dell'ULSS 3 Serenissima</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        <p data-i18n="services.ulss_p1">Le risposte alle domande frequenti sono disponibili sul sito dell'ULSS 3 Serenissima nella sezione "COME FARE PER...".</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/servizi.js"></script>
+</body>
+
+</html>
